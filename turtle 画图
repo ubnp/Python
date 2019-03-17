@@ -1,7 +1,8 @@
 #绘制五角星
 
 from turtle import *
-fillcolor("red")      #配置填充颜色
+color("yellow","red")      #配置填充颜色
+pensize(3)
 begin_fill()          #开始画
 while True:
     forward(200)
