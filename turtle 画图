@@ -1,0 +1,58 @@
+#绘制五角星
+
+from turtle import *
+fillcolor("red")      #配置填充颜色
+begin_fill()          #开始画
+while True:
+    forward(200)
+    right(144)        #将画笔向右转144度
+    if abs(pos())<1:  #查看画笔是否回到原点，
+        break
+
+end_fill()            #结束画画
+
+#绘制太阳花
+
+from turtle import *
+color('red','yellow')      #同时设置pencolor=color1, fillcolor=color2
+begin_fill()          
+while True:
+    forward(200)
+    left(170)        
+    if abs(pos())<1:  
+        break
+
+end_fill()
+done()             # ？？？这是啥
+
+#绘制螺旋线
+import turtle
+import time
+turtle.speed("fastest")
+turtle.pensize(2)
+
+for i in range(100):
+    turtle.forward(2*i)
+    turtle.left(90)
+
+time.sleep(3)   #推迟 3 秒执行
+
+
+#绘制彩色螺旋线
+'''
+绘制开始前调用tracer(False) 
+绘制结束之后tracer(True) 
+这个方法是直接展示给用户绘制结果，无需漫长的等待绘制过程。
+'''
+import turtle
+turtle.pensize(2)
+turtle.bgcolor("black")
+
+colors = ["red","yellow","purple","blue"]
+
+turtle.tracer(False)   #直接画完，不显示过程，只显示结果  
+for i in range(400):
+    turtle.forward(2*i)
+    turtle.color(colors[i%4])
+    turtle.left(91)
+turtle.tracer(True)
