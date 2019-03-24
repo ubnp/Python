@@ -24,7 +24,7 @@ while True:
         break
 
 end_fill()
-done()             # ？？？这是啥
+done()             
 
 #绘制螺旋线
 import turtle
